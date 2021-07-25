@@ -1,0 +1,23 @@
+{
+  "name": "discordjs-ts-starter",
+  "version": "1.0.0",
+  "main": "./output/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.2",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.31.0",
+    "prettier": "^2.3.2",
+    "ts-node": "^10.1.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development ts-node-dev --respawn main.ts",
+    "build": "tsc",
+    "start": "yarn build && NODE_ENV=production node output/main.js"
+  }
+}
